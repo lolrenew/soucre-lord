@@ -1,27 +1,38 @@
-# Tom Raider (XMRig 2.0)
+# XMRig
 
-## Giới Thiệu
+[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
+[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/xmrig/xmrig/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/releases)
+[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/network)
 
-**Tom Raider (XMRig 2.0)** là một phần mềm khai thác tiền điện tử tiên tiến được xây dựng trên nền tảng XMRig 2.0. Phần mềm này cho phép bạn khai thác các đồng tiền ẩn danh như Monero với hiệu suất cao và khả năng cấu hình linh hoạt.
+XMRig is a high performance, open source, cross platform RandomX, KawPow, CryptoNight and [GhostRider](https://github.com/xmrig/xmrig/tree/master/src/crypto/ghostrider#readme) unified CPU/GPU miner and [RandomX benchmark](https://xmrig.com/benchmark). Official binaries are available for Windows, Linux, macOS and FreeBSD.
 
-## Tính Năng
+## Mining backends
+- **CPU** (x86/x64/ARMv7/ARMv8)
+- **OpenCL** for AMD GPUs.
+- **CUDA** for NVIDIA GPUs via external [CUDA plugin](https://github.com/xmrig/xmrig-cuda).
 
-- **Hiệu Suất Cao**: Tối ưu hóa hiệu suất khai thác với các thuật toán tiên tiến.
-- **Hỗ Trợ Đa Nền Tảng**: Có thể chạy trên Windows, Linux và macOS.
-- **Cấu Hình Linh Hoạt**: Cho phép cấu hình chi tiết để tối ưu hóa hiệu suất khai thác.
-- **Giao Diện Đơn Giản**: Dễ dàng cấu hình và sử dụng thông qua tệp cấu hình.
+## Download
+* **[Binary releases](https://github.com/xmrig/xmrig/releases)**
+* **[Build from source](https://xmrig.com/docs/miner/build)**
 
-## Cài Đặt
+## Usage
+The preferred way to configure the miner is the [JSON config file](https://xmrig.com/docs/miner/config) as it is more flexible and human friendly. The [command line interface](https://xmrig.com/docs/miner/command-line-options) does not cover all features, such as mining profiles for different algorithms. Important options can be changed during runtime without miner restart by editing the config file or executing [API](https://xmrig.com/docs/miner/api) calls.
 
-### Trên Windows
+* **[Wizard](https://xmrig.com/wizard)** helps you create initial configuration for the miner.
+* **[Workers](http://workers.xmrig.info)** helps manage your miners via HTTP API.
 
-1. Tải xuống phiên bản Windows từ trang phát hành.
-2. Giải nén tệp tải xuống vào một thư mục.
-3. Chạy tệp thực thi `tomraider.exe` để bắt đầu khai thác.
+## Donations
+* Default donation 1% (1 minute in 100 minutes) can be increased via option `donate-level` or disabled in source code.
+* XMR: `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
 
-### Trên Linux
+## Developers
+* **[xmrig](https://github.com/xmrig)**
+* **[sech1](https://github.com/SChernykh)**
 
-1. Tải xuống phiên bản Linux từ trang phát hành.
-2. Giải nén tệp tải xuống:
-   ```bash
-   tar -xvf tomraider-linux.tar.gz
+## Contacts
+* support@xmrig.com
+* [reddit](https://www.reddit.com/user/XMRig/)
+* [twitter](https://twitter.com/xmrig_dev)
